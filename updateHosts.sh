@@ -1,4 +1,4 @@
 MetastoreSQLServerIP=$1
-MetastoreSQLServerHost=quaerometastore
+MetastoreSQLServerHost=$2
 
 echo "$MetastoreSQLServerIP $MetastoreSQLServerHost" | sudo tee -a /etc/hosts
