@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 export cdp_env_name=$1 
 export sa_username=$2 
