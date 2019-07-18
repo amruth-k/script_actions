@@ -28,6 +28,4 @@ sudo rm -rf /tmp/id_rsa.pub
 
 hdfs dfs -mkdir -p ${cdp_home_dir_hdfs}/manifests
 hadoop fs -put -f ${cdp_home_dir_local}/libs/ ${cdp_home_dir_hdfs}/
-hadoop fs -touchz ${cdp_home_dir_hdfs}/manifests/tmp.txt
 hdfs dfs -chown -R ${sa_username}:hadoop ${sa_userhome_hdfs}/
-hadoop fs -rm -r ${cdp_home_dir_hdfs}/manifests/tmp.txt
